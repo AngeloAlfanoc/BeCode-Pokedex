@@ -1,2 +1,2 @@
-# BeCode-Pok-dex
+# BeCode-Pokedex
 The BeCode Pokédex
