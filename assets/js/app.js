@@ -1,7 +1,7 @@
 // When searched show the coresponding pokemon
 
-var initUrl = 'https://pokeapi.co/api/v2';
-var pokeUrl = initUrl + '/pokemon' + '/';
+var initUrl = 'https://pokeapi.co/api/v2/';
+var pokeUrl = initUrl + 'pokemon' + '/';
 
 $(function () {
     $('#button').click(function (e) {
@@ -15,7 +15,8 @@ $(function () {
         //List all pokemon
         console.log(data.results)
         counter = 0;
-        for (var i = 0; i < 800; i++) {
+        for (var i = 0; i < 802; i++) {
+            console.log(data.results[i].name)
             counter++
             $('#pokemonList').append('<li onclick="pushName('+counter+')">'+  counter + '.' + data.results[i].name + '</li>')
         }
