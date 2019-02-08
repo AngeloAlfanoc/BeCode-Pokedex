@@ -1,7 +1,7 @@
 // When searched show the coresponding pokemon
 
 var initUrl = 'https://pokeapi.co/api/v2/';
-var pokeUrl = initUrl + 'pokemon';
+var pokeUrl = initUrl + 'pokemon/';
 
 $(function () {
     $('#button').click(function (e) {
@@ -29,8 +29,8 @@ function pushName(counter){
 }
 function pokeSubmit(input) {
     var param = $('#pokeInput').val();
-    var pokeUrl = initUrl + '/pokemon/' + param + "/";
-    var pokeCounter= initUrl + '/pokemon/' + input + "/";
+    var pokeUrl = initUrl + 'pokemon/' + param + "/";
+    var pokeCounter= initUrl + 'pokemon/' + input + "/";
     $('#pokeInput').val('');
     //when list clicked do
     $.getJSON(pokeCounter, function (data) {
