@@ -1,7 +1,7 @@
 // When searched show the coresponding pokemon
 
 var initUrl = 'https://pokeapi.co/api/v2/';
-var pokeUrl = initUrl + 'pokemon' + '/';
+var pokeUrl = initUrl + 'pokemon';
 
 $(function () {
     $('#button').click(function (e) {
